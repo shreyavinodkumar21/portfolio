@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  
+  header {
+    background-color: antiquewhite;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    animation: title-fade 3s ease-in-out forwards;
+  }
+  
+header nav a{
+    background-color: ivory;
+}
+  @keyframes title-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    animation: section-fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes section-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .project-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .skills-list {  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    animation: skill-list-appear 1s ease-in-out forwards;
+  }
+  @keyframes skill-list-appear {
+    from { opacity: 0; transform: translateY(20px); }  
+    to { opacity: 1; transform: translateY(0);
+  }
